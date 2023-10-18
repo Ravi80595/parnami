@@ -19,8 +19,8 @@ function Navbar() {
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
-      setNavbarBackground('white');
-      setNavbarTextColor('#D4AF37');
+      setNavbarBackground('black');
+      setNavbarTextColor('white');
     } else {
       setNavbarBackground('transparent');
       setNavbarTextColor('white');
@@ -42,31 +42,31 @@ function Navbar() {
     <nav style={navbarStyle}>
       <Flex justifyContent='space-between' w={'90%'} m={'auto'} pt={'20px'} pb={'10px'}>
         <Box w={'50%'}>
-          {/* <Image w={'170px'} h={'45px'} src={'https://mauryahomes.in/wp-content/themes/maurya/images/logo.png'} /> */}
-          <Text fontSize={'26px'} fontFamily={'cursive'}>Enhance Projects</Text>
+          <Image background={'white'} borderRadius={'5px'} p='5px' position={'absolute'} w={'130px'} h={'115px'} src={'https://pranamigroup.com/static/assets/images/logo-black.png'} />
+          {/* <Text fontSize={'26px'} fontFamily={'cursive'}>Enhance Projects</Text> */}
         </Box>
         <Flex fontSize={['15px', 20, 20, 20]} justifyContent='space-around' w={['70%', '30%', '30%', '60%']} pt={'5px'}>
           <Link to='/'>
           <Text fontFamily={'"Poppins", sans-serif'} color={navbarTextColor} className='Link_btns'>Home</Text>
           </Link>
           <Link to='/builder'>
-          <Text color={navbarTextColor} className='Link_btns'>Builder</Text>
+          <Text color={navbarTextColor} className='Link_btns'>Residental</Text>
           </Link>
           <Link to='/contractors'>
-          <Text color={navbarTextColor} className='Link_btns'>Contractors</Text>
+          <Text color={navbarTextColor} className='Link_btns'>Commercials</Text>
           </Link>
           <Link to='/about'>
-          <Text color={navbarTextColor} className='Link_btns'>About Us</Text>
+          <Text color={navbarTextColor} className='Link_btns'>Rental</Text>
           </Link>
           <Link to='/projects'>
-            <Text color={navbarTextColor} className='Link_btns'>Projects</Text>
+            <Text color={navbarTextColor} className='Link_btns'>Hospitality</Text>
           </Link>
-          <Link to='/awards'>
+          {/* <Link to='/awards'>
             <Text color={navbarTextColor} className='Link_btns'>Awards</Text>
           </Link>
           <Link to='/contact'>
           <Text color={navbarTextColor} className='Link_btns'>Contact Us</Text>
-          </Link>
+          </Link> */}
         </Flex>
       </Flex>
     </nav>

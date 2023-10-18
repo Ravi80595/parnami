@@ -1,0 +1,46 @@
+/* Add this CSS to your project's CSS file or use inline styles in your React component */
+
+.grid-container {
+    display: grid;
+    /* grid-template-columns: repeat(3, '250px'); */
+    /* grid-template-rows: repeat(2,'250px'); */
+    grid-template-columns: repeat(3,'250px');
+    grid-gap: 10px;
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  .grid-item {
+    width: 100%;
+    padding-top: 66.6667%; /* 2:3 aspect ratio */
+    background-image: url('https://kyiv.b-cdn.net/wp-content/uploads/2014/05/interior1villa-525x328.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .grid-item-1 {
+    grid-column: span 2;
+  }
+  
+  .grid-item-2 {
+    background-image: url('https://kyiv.b-cdn.net/wp-content/uploads/2014/05/interior1villa-525x328.jpg');
+  }
+  
+  .grid-item-3 {
+    background-image: url('https://kyiv.b-cdn.net/wp-content/uploads/2014/05/interior1villa-525x328.jpg');
+  }
+  
+  .grid-item-4 {
+    background-image: url('https://kyiv.b-cdn.net/wp-content/uploads/2014/05/interior1villa-525x328.jpg');
+  }
+  
+  .grid-item-5 {
+    background-image: url('https://kyiv.b-cdn.net/wp-content/uploads/2014/05/interior1villa-525x328.jpg');
+  }
+  
+  .grid-item-6 {
+    grid-column: span 2;
+    background-image: url('https://kyiv.b-cdn.net/wp-content/uploads/2014/05/interior1villa-525x328.jpg');
+  }
+  
