@@ -3,7 +3,7 @@ import { Flex, Box, Text, Image } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import '../CSS/Navbar.css'
 
-function Navbar() {
+function Navbar2() {
   const [navbarBackground, setNavbarBackground] = useState('transparent');
   const [navbarTextColor, setNavbarTextColor] = useState('white');
 
@@ -28,8 +28,8 @@ function Navbar() {
   };
 
   const navbarStyle = {
-    backgroundColor: navbarBackground,
-    color: navbarTextColor,
+    backgroundColor: 'black',
+    color: 'white',
     position: 'fixed',
     top: 0,
     left: 0,
@@ -73,4 +73,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar2;
